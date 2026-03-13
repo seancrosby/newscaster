@@ -1,0 +1,7 @@
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "preferences": ["Tech breakthroughs", "Global economics", "Environmental news"],
+  "avoid": ["Sports", "Celebrity gossip", "Politics"],
+  "categories": ["World", "Nation", "Tech", "Science", "Finance"]
+}
