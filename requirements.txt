@@ -1,4 +1,9 @@
-google-generativeai
 python-dotenv
 yagmail
 requests
+crewai
+langchain-ollama
+duckduckgo-search
+langchain_community
+aiosmtpd
+langchain

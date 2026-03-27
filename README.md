@@ -1,20 +1,28 @@
-# Newscaster: Personalized AI News Briefs
+# Newscaster: CrewAI-Powered Personalized News Briefs (Ollama)
 
-Daily personalized news summaries from Google Gemini delivered directly to your inbox.
+Daily personalized news summaries delivered by a specialized team of AI agents, powered by local LLMs via Ollama.
 
 ## Features
-- **Personalized:** Tailored to individual preferences and categories.
-- **Negative Filtering:** Avoids specific topics or sources as configured.
-- **Deduplication:** Tracks sent stories to ensure you don't receive the same news twice.
-- **Scheduled:** Optimized for running via cron.
+- **Agentic Pipeline:** Specialized CrewAI agents for news collection, summarization, and email dispatch.
+- **Local LLM:** Powered by Ollama for privacy and offline capability.
+- **Personalized:** Tailored to individual preferences and categories for each recipient.
+- **Negative Filtering:** Strictly avoids topics or sources as specified in each user's "avoid" list.
+- **Deduplication:** Maintains persistent state to ensure you never receive the same story twice.
 
 ## Setup
-1.  **Environment Variables:**
+1.  **Ollama:**
+    Ensure you have [Ollama](https://ollama.com/) installed and running. Pull the desired model (e.g., `llama3`):
+    ```bash
+    ollama pull llama3
+    ```
+
+2.  **Environment Variables:**
     Copy `.env.example` to `.env` and fill in your details:
     ```bash
     cp .env.example .env
     ```
-    - `GEMINI_API_KEY`: Your Google AI Studio API key.
+    - `OLLAMA_MODEL`: The model name (defaults to `llama3`).
+    - `OLLAMA_BASE_URL`: The URL for your Ollama instance (defaults to `http://localhost:11434`).
     - `EMAIL_USER`: Your SMTP/Gmail address.
     - `EMAIL_PASS`: Your App Password.
     - `SMTP_HOST`: (Optional) Your SMTP server host (defaults to `smtp.gmail.com`).

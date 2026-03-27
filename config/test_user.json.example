@@ -1,0 +1,7 @@
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "preferences": ["Artificial Intelligence", "Space Exploration"],
+  "avoid": ["Politics", "Sports"],
+  "categories": ["Tech", "Science"]
+}
